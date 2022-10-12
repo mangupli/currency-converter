@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  }
+  
+  .app {
+    width: 350px;
+    height: 250px;
+    background-color: #fff;
+    margin: 50px auto 0 auto;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .2);
+  }
+  
+  .input{
+    display: inline;
+    position: relative;
+    input{
+        width: 90%;
+        height: 50px;
+        border-radius: 5px;
+        font-size: 34px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &:after{
+        content: 'RUB';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        right: 20px;
+        color: grey;
+    }
+  }
+
+  .counter {
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .2);
+    background-color: #e6e6e6;
+    text-align: center;
+    line-height: 50px;
+    font-size: 34px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  
+  .controls {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    
+    &__button{
+        padding: 7px 12px;
+        cursor: pointer;
+        background-color: #afb2b8;
+        color: white;
+        border:rgba(0,0,0) 1px solid;
+        transition: 0.3s transform;
+        &_selected{
+            box-shadow: 0 5px 10px rgb(255, 85, 0);
+            background-color: #e6e6e6;
+            border:#e6e6e6 1px solid;
+            color: black;
+        }
+        &:active{
+            transform: translateY(2px);
+        }
+    }
+  }
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+  
