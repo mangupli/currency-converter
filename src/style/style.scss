@@ -21,7 +21,6 @@
   }
   
   .input{
-    display: inline;
     position: relative;
     input{
         width: 90%;
@@ -69,7 +68,7 @@
         border:rgba(0,0,0) 1px solid;
         transition: 0.3s transform;
         &_selected{
-            box-shadow: 0 5px 10px rgb(255, 85, 0);
+            box-shadow: 0 5px 10px rgb(255, 0, 225);
             background-color: #e6e6e6;
             border:#e6e6e6 1px solid;
             color: black;
